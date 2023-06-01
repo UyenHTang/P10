@@ -5,6 +5,7 @@ let randomNum = () => {
 let changeColor = () => {
   let randomColor = `rgb(${randomNum()},${randomNum()},${randomNum()})`;
   document.body.style.backgroundColor = randomColor;
+  document.getElementById("colorName").innerText = randomColor;
 };
 btn.addEventListener("click", changeColor);
 window.addEventListener("load", changeColor);
